@@ -1,0 +1,4 @@
+ECHO is on.
+
+*.csv
+*.ipynb_checkpoints/
