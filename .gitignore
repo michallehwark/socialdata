@@ -2,3 +2,9 @@ ECHO is on.
 
 *.csv
 *.ipynb_checkpoints/
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
