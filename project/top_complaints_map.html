@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0cd0ed0d6724814e0b47528119cd7fa1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0cd0ed0d6724814e0b47528119cd7fa1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0cd0ed0d6724814e0b47528119cd7fa1 = L.map(
+                "map_0cd0ed0d6724814e0b47528119cd7fa1",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fdcabb7f5ef7807b8cdcb0e66f9a2815 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0cd0ed0d6724814e0b47528119cd7fa1);
+        
+    
+            var tile_layer_9845f9a3d5053683df27ef6b2f4cf598 = L.tileLayer(
+                "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.png?api_key=dba936f3-1ed1-4864-a3c0-f0b5f0f1ec3d",
+                {"attribution": "Toner Background", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            ).addTo(map_0cd0ed0d6724814e0b47528119cd7fa1);
+        
+    
+            var feature_group_06deda1222e56ea1c47f166fa6e81bad = L.featureGroup(
+                {}
+            ).addTo(map_0cd0ed0d6724814e0b47528119cd7fa1);
+        
+    
+            var marker_25deaf01ebf812afc7925287192f0c7d = L.marker(
+                [40.729636, -73.983818],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_7f1e5c04ee2675bbf18021183f8500f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_25deaf01ebf812afc7925287192f0c7d.setIcon(icon_7f1e5c04ee2675bbf18021183f8500f8);
+        
+    
+        var popup_3fa947c0ab8f5d48a70abed0b176bf13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27d6b7913e807ebc22b545636e0b1438 = $(`<div id="html_27d6b7913e807ebc22b545636e0b1438" style="width: 100.0%; height: 100.0%;">Street: 1ST AVENUE Number of Complaints: 1051</div>`)[0];
+                popup_3fa947c0ab8f5d48a70abed0b176bf13.setContent(html_27d6b7913e807ebc22b545636e0b1438);
+            
+        
+
+        marker_25deaf01ebf812afc7925287192f0c7d.bindPopup(popup_3fa947c0ab8f5d48a70abed0b176bf13)
+        ;
+
+        
+    
+    
+            var marker_b5ea91b6b3b5e897e1bee170796fdf59 = L.marker(
+                [40.755446, -73.997195],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_d79032f688baf126f7e5167ea4aeb9cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b5ea91b6b3b5e897e1bee170796fdf59.setIcon(icon_d79032f688baf126f7e5167ea4aeb9cd);
+        
+    
+        var popup_a907896aa342781fdb7f597fdd2a0e42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9789bb8694b33518b10b8a26e662b8a9 = $(`<div id="html_9789bb8694b33518b10b8a26e662b8a9" style="width: 100.0%; height: 100.0%;">Street: W 36 STREET Number of Complaints: 474</div>`)[0];
+                popup_a907896aa342781fdb7f597fdd2a0e42.setContent(html_9789bb8694b33518b10b8a26e662b8a9);
+            
+        
+
+        marker_b5ea91b6b3b5e897e1bee170796fdf59.bindPopup(popup_a907896aa342781fdb7f597fdd2a0e42)
+        ;
+
+        
+    
+    
+            var marker_0916ed70c0906951fc3052900823a28e = L.marker(
+                [40.785287, -73.97343],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_c136041e1f7472a0ebd8e3a36cf7621b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0916ed70c0906951fc3052900823a28e.setIcon(icon_c136041e1f7472a0ebd8e3a36cf7621b);
+        
+    
+        var popup_cd154251a563f7f3295bfdbe2da34162 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d071ceffc8131ce0391b47e85f6ce864 = $(`<div id="html_d071ceffc8131ce0391b47e85f6ce864" style="width: 100.0%; height: 100.0%;">Street: WEST 84TH STREET Number of Complaints: 756</div>`)[0];
+                popup_cd154251a563f7f3295bfdbe2da34162.setContent(html_d071ceffc8131ce0391b47e85f6ce864);
+            
+        
+
+        marker_0916ed70c0906951fc3052900823a28e.bindPopup(popup_cd154251a563f7f3295bfdbe2da34162)
+        ;
+
+        
+    
+    
+            var marker_456bb87667c6dd27237ee08d57775ceb = L.marker(
+                [40.694571, -73.980703],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_22dd5712ddee090e40d7171bec891429 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_456bb87667c6dd27237ee08d57775ceb.setIcon(icon_22dd5712ddee090e40d7171bec891429);
+        
+    
+        var popup_e2d7620696b3b690a7b1668f1bc596cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b826caa3c4fd252992c0924eea328a2f = $(`<div id="html_b826caa3c4fd252992c0924eea328a2f" style="width: 100.0%; height: 100.0%;">Street: NAVY WALK Number of Complaints: 804</div>`)[0];
+                popup_e2d7620696b3b690a7b1668f1bc596cf.setContent(html_b826caa3c4fd252992c0924eea328a2f);
+            
+        
+
+        marker_456bb87667c6dd27237ee08d57775ceb.bindPopup(popup_e2d7620696b3b690a7b1668f1bc596cf)
+        ;
+
+        
+    
+    
+            var marker_f083743f776c96db958cb9e78060c597 = L.marker(
+                [40.694006, -73.980253],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_64f1a5d263951b6f0f3b6ebfe4a28279 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f083743f776c96db958cb9e78060c597.setIcon(icon_64f1a5d263951b6f0f3b6ebfe4a28279);
+        
+    
+        var popup_9f5bb253642d33fb68ec8539806872bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e25ce029aaf2f9c38db1306e619b6e6a = $(`<div id="html_e25ce029aaf2f9c38db1306e619b6e6a" style="width: 100.0%; height: 100.0%;">Street: NAVY WALK Number of Complaints: 848</div>`)[0];
+                popup_9f5bb253642d33fb68ec8539806872bb.setContent(html_e25ce029aaf2f9c38db1306e619b6e6a);
+            
+        
+
+        marker_f083743f776c96db958cb9e78060c597.bindPopup(popup_9f5bb253642d33fb68ec8539806872bb)
+        ;
+
+        
+    
+    
+            var marker_7a842c2d669c2652270845197e89c12a = L.marker(
+                [40.753014, -73.996589],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_6e3aee183d5d9c8addcfd53e7734b755 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7a842c2d669c2652270845197e89c12a.setIcon(icon_6e3aee183d5d9c8addcfd53e7734b755);
+        
+    
+        var popup_b5787468d1e42f3b04fc03cd1a8c0c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5feff298d9b6ee60629a2c854355dc1 = $(`<div id="html_a5feff298d9b6ee60629a2c854355dc1" style="width: 100.0%; height: 100.0%;">Street: 9 AVE Number of Complaints: 453</div>`)[0];
+                popup_b5787468d1e42f3b04fc03cd1a8c0c8f.setContent(html_a5feff298d9b6ee60629a2c854355dc1);
+            
+        
+
+        marker_7a842c2d669c2652270845197e89c12a.bindPopup(popup_b5787468d1e42f3b04fc03cd1a8c0c8f)
+        ;
+
+        
+    
+    
+            var marker_e50cda82781be8127b54ae458a6c8848 = L.marker(
+                [40.707641, -74.006528],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_2572628c3f2301506664bb45db4e1079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e50cda82781be8127b54ae458a6c8848.setIcon(icon_2572628c3f2301506664bb45db4e1079);
+        
+    
+        var popup_f0dcb6371bb2d63ead265915a77eb107 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dffc10601768663db44ddf4352e2bf0 = $(`<div id="html_7dffc10601768663db44ddf4352e2bf0" style="width: 100.0%; height: 100.0%;">Street: PLATT STREET Number of Complaints: 618</div>`)[0];
+                popup_f0dcb6371bb2d63ead265915a77eb107.setContent(html_7dffc10601768663db44ddf4352e2bf0);
+            
+        
+
+        marker_e50cda82781be8127b54ae458a6c8848.bindPopup(popup_f0dcb6371bb2d63ead265915a77eb107)
+        ;
+
+        
+    
+    
+            var marker_76d3f16b1fb058b283768e2d0d06772f = L.marker(
+                [40.753045, -74.000282],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_a44ebe21a1344c231ed5c0858be11c10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_76d3f16b1fb058b283768e2d0d06772f.setIcon(icon_a44ebe21a1344c231ed5c0858be11c10);
+        
+    
+        var popup_1b1b7958927e55786d2e166965243c83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67ba262482466eb49ebe610ee78be37d = $(`<div id="html_67ba262482466eb49ebe610ee78be37d" style="width: 100.0%; height: 100.0%;">Street: HUDSON YARDS Number of Complaints: 624</div>`)[0];
+                popup_1b1b7958927e55786d2e166965243c83.setContent(html_67ba262482466eb49ebe610ee78be37d);
+            
+        
+
+        marker_76d3f16b1fb058b283768e2d0d06772f.bindPopup(popup_1b1b7958927e55786d2e166965243c83)
+        ;
+
+        
+    
+    
+            var marker_69b0db613b1933c1b8e60fb775617d23 = L.marker(
+                [40.732447, -73.983031],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_08fb4e7cc2bb453bac62344067f1c091 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_69b0db613b1933c1b8e60fb775617d23.setIcon(icon_08fb4e7cc2bb453bac62344067f1c091);
+        
+    
+        var popup_7e53bfb6c31113cffd244cf054ecf08a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_117836e658882ea18df41e3c6938b2a3 = $(`<div id="html_117836e658882ea18df41e3c6938b2a3" style="width: 100.0%; height: 100.0%;">Street: EAST 15TH STREET Number of Complaints: 500</div>`)[0];
+                popup_7e53bfb6c31113cffd244cf054ecf08a.setContent(html_117836e658882ea18df41e3c6938b2a3);
+            
+        
+
+        marker_69b0db613b1933c1b8e60fb775617d23.bindPopup(popup_7e53bfb6c31113cffd244cf054ecf08a)
+        ;
+
+        
+    
+    
+            var marker_90501728180bad61f213be566cc2465f = L.marker(
+                [40.657914, -74.000652],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_2bbc8f41690b05186110bb22610119cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_90501728180bad61f213be566cc2465f.setIcon(icon_2bbc8f41690b05186110bb22610119cd);
+        
+    
+        var popup_a68ab98ada6920ffdb39541f4c65e4c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_546395b7a1fa68137c3c63fb31b28e83 = $(`<div id="html_546395b7a1fa68137c3c63fb31b28e83" style="width: 100.0%; height: 100.0%;">Street: 4TH AVENUE Number of Complaints: 450</div>`)[0];
+                popup_a68ab98ada6920ffdb39541f4c65e4c3.setContent(html_546395b7a1fa68137c3c63fb31b28e83);
+            
+        
+
+        marker_90501728180bad61f213be566cc2465f.bindPopup(popup_a68ab98ada6920ffdb39541f4c65e4c3)
+        ;
+
+        
+    
+    
+            var marker_66f53aeebd0ffdae671e4706fe77343d = L.marker(
+                [40.695547, -73.98714],
+                {}
+            ).addTo(feature_group_06deda1222e56ea1c47f166fa6e81bad);
+        
+    
+            var icon_c7bdbdeb025358ee25002ca0cb402a42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_66f53aeebd0ffdae671e4706fe77343d.setIcon(icon_c7bdbdeb025358ee25002ca0cb402a42);
+        
+    
+        var popup_99e3fbdceac38a5040420a9216eb5b95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c92e2bb70b6131629db66e7507b8534 = $(`<div id="html_7c92e2bb70b6131629db66e7507b8534" style="width: 100.0%; height: 100.0%;">Street: JAY STREET Number of Complaints: 628</div>`)[0];
+                popup_99e3fbdceac38a5040420a9216eb5b95.setContent(html_7c92e2bb70b6131629db66e7507b8534);
+            
+        
+
+        marker_66f53aeebd0ffdae671e4706fe77343d.bindPopup(popup_99e3fbdceac38a5040420a9216eb5b95)
+        ;
+
+        
+    
+    
+            var feature_group_e61f4abbd114124b3dc3955fdadc5e43 = L.featureGroup(
+                {}
+            ).addTo(map_0cd0ed0d6724814e0b47528119cd7fa1);
+        
+    
+            var marker_251fe4134bd76a81de8070a657a96738 = L.marker(
+                [40.739389, -74.007809],
+                {}
+            ).addTo(feature_group_e61f4abbd114124b3dc3955fdadc5e43);
+        
+    
+            var icon_809346048aa831d8e1616224f9dadc45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_251fe4134bd76a81de8070a657a96738.setIcon(icon_809346048aa831d8e1616224f9dadc45);
+        
+    
+        var popup_6a889268f7e690924be0d49bd3692fdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d68780ab4d8e25d10535b0fbb182f991 = $(`<div id="html_d68780ab4d8e25d10535b0fbb182f991" style="width: 100.0%; height: 100.0%;">Street: GANSEVOORT STREET Number of Complaints: 408</div>`)[0];
+                popup_6a889268f7e690924be0d49bd3692fdc.setContent(html_d68780ab4d8e25d10535b0fbb182f991);
+            
+        
+
+        marker_251fe4134bd76a81de8070a657a96738.bindPopup(popup_6a889268f7e690924be0d49bd3692fdc)
+        ;
+
+        
+    
+    
+            var marker_3316ae059dd8074a967f740e538a943f = L.marker(
+                [40.752921, -73.996658],
+                {}
+            ).addTo(feature_group_e61f4abbd114124b3dc3955fdadc5e43);
+        
+    
+            var icon_a74048bf68e6bbf305371f3a4944edcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3316ae059dd8074a967f740e538a943f.setIcon(icon_a74048bf68e6bbf305371f3a4944edcd);
+        
+    
+        var popup_c26b71165a0e5ef577e18cdcbd0ccedb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_259006fc3a675745ca335ebcfcabba11 = $(`<div id="html_259006fc3a675745ca335ebcfcabba11" style="width: 100.0%; height: 100.0%;">Street: 9TH AVENUE Number of Complaints: 426</div>`)[0];
+                popup_c26b71165a0e5ef577e18cdcbd0ccedb.setContent(html_259006fc3a675745ca335ebcfcabba11);
+            
+        
+
+        marker_3316ae059dd8074a967f740e538a943f.bindPopup(popup_c26b71165a0e5ef577e18cdcbd0ccedb)
+        ;
+
+        
+    
+    
+            var marker_4911970d79906bb4122a5d307681d7fc = L.marker(
+                [40.752874, -73.99669],
+                {}
+            ).addTo(feature_group_e61f4abbd114124b3dc3955fdadc5e43);
+        
+    
+            var icon_6d520f39940ecff75b1e6c582ad97889 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4911970d79906bb4122a5d307681d7fc.setIcon(icon_6d520f39940ecff75b1e6c582ad97889);
+        
+    
+        var popup_3fd3280b065abb3e1a54f039cd720aff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e81ba846a97cb9141818e990523e93d = $(`<div id="html_6e81ba846a97cb9141818e990523e93d" style="width: 100.0%; height: 100.0%;">Street: 9 AVENUE Number of Complaints: 411</div>`)[0];
+                popup_3fd3280b065abb3e1a54f039cd720aff.setContent(html_6e81ba846a97cb9141818e990523e93d);
+            
+        
+
+        marker_4911970d79906bb4122a5d307681d7fc.bindPopup(popup_3fd3280b065abb3e1a54f039cd720aff)
+        ;
+
+        
+    
+    
+            var marker_1aa4b204e85e7dbf8a5ff3074d5d38ab = L.marker(
+                [40.753045, -74.000282],
+                {}
+            ).addTo(feature_group_e61f4abbd114124b3dc3955fdadc5e43);
+        
+    
+            var icon_2a42bfbd5195b702cfcebbc705658b9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1aa4b204e85e7dbf8a5ff3074d5d38ab.setIcon(icon_2a42bfbd5195b702cfcebbc705658b9b);
+        
+    
+        var popup_96ca96a8421d17b5fbd945ce7ad958a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae1a5983dc6e895612f3592685446f0a = $(`<div id="html_ae1a5983dc6e895612f3592685446f0a" style="width: 100.0%; height: 100.0%;">Street: HUDSON YARDS Number of Complaints: 416</div>`)[0];
+                popup_96ca96a8421d17b5fbd945ce7ad958a0.setContent(html_ae1a5983dc6e895612f3592685446f0a);
+            
+        
+
+        marker_1aa4b204e85e7dbf8a5ff3074d5d38ab.bindPopup(popup_96ca96a8421d17b5fbd945ce7ad958a0)
+        ;
+
+        
+    
+    
+            var marker_56ca23744178de1289d636d5f2958500 = L.marker(
+                [40.733301, -73.985091],
+                {}
+            ).addTo(feature_group_e61f4abbd114124b3dc3955fdadc5e43);
+        
+    
+            var icon_ca024bc54cf8549c8aba6ab5d41235b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_56ca23744178de1289d636d5f2958500.setIcon(icon_ca024bc54cf8549c8aba6ab5d41235b2);
+        
+    
+        var popup_10d3257fb0fe657a7d4f74eaa27710e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5428936513e6ff702d51e133f7bf6472 = $(`<div id="html_5428936513e6ff702d51e133f7bf6472" style="width: 100.0%; height: 100.0%;">Street: EAST 15TH STREET Number of Complaints: 448</div>`)[0];
+                popup_10d3257fb0fe657a7d4f74eaa27710e0.setContent(html_5428936513e6ff702d51e133f7bf6472);
+            
+        
+
+        marker_56ca23744178de1289d636d5f2958500.bindPopup(popup_10d3257fb0fe657a7d4f74eaa27710e0)
+        ;
+
+        
+    
+    
+            var marker_e7e37af6781872e1cc4d90554cb0af34 = L.marker(
+                [40.762023, -73.975782],
+                {}
+            ).addTo(feature_group_e61f4abbd114124b3dc3955fdadc5e43);
+        
+    
+            var icon_781aedd8f491fd182b3bbc493f451035 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e7e37af6781872e1cc4d90554cb0af34.setIcon(icon_781aedd8f491fd182b3bbc493f451035);
+        
+    
+        var popup_853c49ab6ddbcafee141b2539debe071 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c6a13f70a09ede09c2dbf7cb7656773 = $(`<div id="html_0c6a13f70a09ede09c2dbf7cb7656773" style="width: 100.0%; height: 100.0%;">Street: WEST 55 STREET Number of Complaints: 405</div>`)[0];
+                popup_853c49ab6ddbcafee141b2539debe071.setContent(html_0c6a13f70a09ede09c2dbf7cb7656773);
+            
+        
+
+        marker_e7e37af6781872e1cc4d90554cb0af34.bindPopup(popup_853c49ab6ddbcafee141b2539debe071)
+        ;
+
+        
+    
+    
+            var marker_2db8298fcf94e1df2b81506210c0158d = L.marker(
+                [40.682244, -73.979766],
+                {}
+            ).addTo(feature_group_e61f4abbd114124b3dc3955fdadc5e43);
+        
+    
+            var icon_d0fbe5f2511686113b0e71e1de3369b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2db8298fcf94e1df2b81506210c0158d.setIcon(icon_d0fbe5f2511686113b0e71e1de3369b5);
+        
+    
+        var popup_6489e5b2ddeaa599c78a50cc61fd6eeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bc88925efb87926646ec715b45c261a = $(`<div id="html_6bc88925efb87926646ec715b45c261a" style="width: 100.0%; height: 100.0%;">Street: 4TH AVENUE Number of Complaints: 443</div>`)[0];
+                popup_6489e5b2ddeaa599c78a50cc61fd6eeb.setContent(html_6bc88925efb87926646ec715b45c261a);
+            
+        
+
+        marker_2db8298fcf94e1df2b81506210c0158d.bindPopup(popup_6489e5b2ddeaa599c78a50cc61fd6eeb)
+        ;
+
+        
+    
+    
+            var feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40 = L.featureGroup(
+                {}
+            ).addTo(map_0cd0ed0d6724814e0b47528119cd7fa1);
+        
+    
+            var marker_61a41b03b9d1b22705086fc742a84edf = L.marker(
+                [40.667286, -73.959905],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_f882cb6f76a03e2dd9195350c3067eba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_61a41b03b9d1b22705086fc742a84edf.setIcon(icon_f882cb6f76a03e2dd9195350c3067eba);
+        
+    
+        var popup_cfba1ec9acc019ae571b8f1c4f08b966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6892092f153092d1742bc111f6b08c2 = $(`<div id="html_f6892092f153092d1742bc111f6b08c2" style="width: 100.0%; height: 100.0%;">Street: CROWN STREET Number of Complaints: 384</div>`)[0];
+                popup_cfba1ec9acc019ae571b8f1c4f08b966.setContent(html_f6892092f153092d1742bc111f6b08c2);
+            
+        
+
+        marker_61a41b03b9d1b22705086fc742a84edf.bindPopup(popup_cfba1ec9acc019ae571b8f1c4f08b966)
+        ;
+
+        
+    
+    
+            var marker_e319304bffd3c5693c8199346b461d50 = L.marker(
+                [40.786643, -73.976607],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_8851cece494c5924c90b611343137da6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_e319304bffd3c5693c8199346b461d50.setIcon(icon_8851cece494c5924c90b611343137da6);
+        
+    
+        var popup_bba25da9cb47e4eaa685a22456389b06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_371249d1179aa3733f49a9f125b7b3d8 = $(`<div id="html_371249d1179aa3733f49a9f125b7b3d8" style="width: 100.0%; height: 100.0%;">Street: WEST 84TH STREET Number of Complaints: 352</div>`)[0];
+                popup_bba25da9cb47e4eaa685a22456389b06.setContent(html_371249d1179aa3733f49a9f125b7b3d8);
+            
+        
+
+        marker_e319304bffd3c5693c8199346b461d50.bindPopup(popup_bba25da9cb47e4eaa685a22456389b06)
+        ;
+
+        
+    
+    
+            var marker_820b10337b3c3c649a0dcb5621b860b0 = L.marker(
+                [40.688566, -73.980045],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_f2f306be45d97ba4c1d831d52c2da79d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_820b10337b3c3c649a0dcb5621b860b0.setIcon(icon_f2f306be45d97ba4c1d831d52c2da79d);
+        
+    
+        var popup_04d7b382c83dc6304fe559122529f305 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2c561cd6393ed5848f21895244f4134 = $(`<div id="html_b2c561cd6393ed5848f21895244f4134" style="width: 100.0%; height: 100.0%;">Street: FULTON STREET Number of Complaints: 380</div>`)[0];
+                popup_04d7b382c83dc6304fe559122529f305.setContent(html_b2c561cd6393ed5848f21895244f4134);
+            
+        
+
+        marker_820b10337b3c3c649a0dcb5621b860b0.bindPopup(popup_04d7b382c83dc6304fe559122529f305)
+        ;
+
+        
+    
+    
+            var marker_5bbe4aa434cd257e4ac970a641e85078 = L.marker(
+                [40.737163, -73.996994],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_449538f32bb5cd54846b73d7dd9ed2ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_5bbe4aa434cd257e4ac970a641e85078.setIcon(icon_449538f32bb5cd54846b73d7dd9ed2ff);
+        
+    
+        var popup_a701682204eec18fcad26f150b558e8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ae56f6241b8274c7d8525baaa060391 = $(`<div id="html_7ae56f6241b8274c7d8525baaa060391" style="width: 100.0%; height: 100.0%;">Street: 6 AVE Number of Complaints: 360</div>`)[0];
+                popup_a701682204eec18fcad26f150b558e8a.setContent(html_7ae56f6241b8274c7d8525baaa060391);
+            
+        
+
+        marker_5bbe4aa434cd257e4ac970a641e85078.bindPopup(popup_a701682204eec18fcad26f150b558e8a)
+        ;
+
+        
+    
+    
+            var marker_607b2f258f92445138d6a66ea8ca14b2 = L.marker(
+                [40.737213, -73.996958],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_a8ae77d337ac37e484174ec18364cd2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_607b2f258f92445138d6a66ea8ca14b2.setIcon(icon_a8ae77d337ac37e484174ec18364cd2a);
+        
+    
+        var popup_d3e54ed1474ecb0c9cd21d48ce45fa5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42d970fdf4489bf9231be19bc914e1ac = $(`<div id="html_42d970fdf4489bf9231be19bc914e1ac" style="width: 100.0%; height: 100.0%;">Street: 6 AVE Number of Complaints: 354</div>`)[0];
+                popup_d3e54ed1474ecb0c9cd21d48ce45fa5f.setContent(html_42d970fdf4489bf9231be19bc914e1ac);
+            
+        
+
+        marker_607b2f258f92445138d6a66ea8ca14b2.bindPopup(popup_d3e54ed1474ecb0c9cd21d48ce45fa5f)
+        ;
+
+        
+    
+    
+            var marker_781560cd03def89de26da6d8beb43351 = L.marker(
+                [40.73755, -73.997312],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_268297d2d84d87c0b5949b22d1256852 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_781560cd03def89de26da6d8beb43351.setIcon(icon_268297d2d84d87c0b5949b22d1256852);
+        
+    
+        var popup_d05509664f074bec8f9c17fee666c17b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f83e2119aa4c6add7be717aa7d22d434 = $(`<div id="html_f83e2119aa4c6add7be717aa7d22d434" style="width: 100.0%; height: 100.0%;">Street: W 14TH STREET Number of Complaints: 340</div>`)[0];
+                popup_d05509664f074bec8f9c17fee666c17b.setContent(html_f83e2119aa4c6add7be717aa7d22d434);
+            
+        
+
+        marker_781560cd03def89de26da6d8beb43351.bindPopup(popup_d05509664f074bec8f9c17fee666c17b)
+        ;
+
+        
+    
+    
+            var marker_17eab1fc79079714350947365140fe5c = L.marker(
+                [40.724796, -74.002464],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_1198eb4398d566e886cc81cb5bea1161 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_17eab1fc79079714350947365140fe5c.setIcon(icon_1198eb4398d566e886cc81cb5bea1161);
+        
+    
+        var popup_2643bb81eaebd159b21bdebb455658aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec66e84fd04b147aa3850b092be00f21 = $(`<div id="html_ec66e84fd04b147aa3850b092be00f21" style="width: 100.0%; height: 100.0%;">Street: SPRING STREET Number of Complaints: 361</div>`)[0];
+                popup_2643bb81eaebd159b21bdebb455658aa.setContent(html_ec66e84fd04b147aa3850b092be00f21);
+            
+        
+
+        marker_17eab1fc79079714350947365140fe5c.bindPopup(popup_2643bb81eaebd159b21bdebb455658aa)
+        ;
+
+        
+    
+    
+            var marker_9014bb6f7ba5670fbdfb72e5849a218a = L.marker(
+                [40.754649, -73.968003],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_5485a511c476d82e1adcd07dc36f24fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_9014bb6f7ba5670fbdfb72e5849a218a.setIcon(icon_5485a511c476d82e1adcd07dc36f24fc);
+        
+    
+        var popup_2d82bde1aad3a900f61a65160ded93cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb0da0e8bc8510ff2833488544968478 = $(`<div id="html_bb0da0e8bc8510ff2833488544968478" style="width: 100.0%; height: 100.0%;">Street: EAST 50 STREET Number of Complaints: 366</div>`)[0];
+                popup_2d82bde1aad3a900f61a65160ded93cc.setContent(html_bb0da0e8bc8510ff2833488544968478);
+            
+        
+
+        marker_9014bb6f7ba5670fbdfb72e5849a218a.bindPopup(popup_2d82bde1aad3a900f61a65160ded93cc)
+        ;
+
+        
+    
+    
+            var marker_f95276a76a319998ecbf0d44173c73df = L.marker(
+                [40.754692, -73.968104],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_39e3dee74f653ad1609e4642ad01ec31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_f95276a76a319998ecbf0d44173c73df.setIcon(icon_39e3dee74f653ad1609e4642ad01ec31);
+        
+    
+        var popup_686745dcbeb3a94ae3de36719acc4918 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26c72c6cbbef98b70ed0ec402c6b1951 = $(`<div id="html_26c72c6cbbef98b70ed0ec402c6b1951" style="width: 100.0%; height: 100.0%;">Street: E 50 ST Number of Complaints: 312</div>`)[0];
+                popup_686745dcbeb3a94ae3de36719acc4918.setContent(html_26c72c6cbbef98b70ed0ec402c6b1951);
+            
+        
+
+        marker_f95276a76a319998ecbf0d44173c73df.bindPopup(popup_686745dcbeb3a94ae3de36719acc4918)
+        ;
+
+        
+    
+    
+            var marker_3c364ad87662048944770aa30c8844bd = L.marker(
+                [40.754706, -73.96814],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_63f240d71eb6131916ce098f86438710 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_3c364ad87662048944770aa30c8844bd.setIcon(icon_63f240d71eb6131916ce098f86438710);
+        
+    
+        var popup_459d655eb1f141c26bd4fbb639dd12a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7c336126823bc587bcf4c100f9835fe = $(`<div id="html_c7c336126823bc587bcf4c100f9835fe" style="width: 100.0%; height: 100.0%;">Street: E 50TH ST Number of Complaints: 312</div>`)[0];
+                popup_459d655eb1f141c26bd4fbb639dd12a2.setContent(html_c7c336126823bc587bcf4c100f9835fe);
+            
+        
+
+        marker_3c364ad87662048944770aa30c8844bd.bindPopup(popup_459d655eb1f141c26bd4fbb639dd12a2)
+        ;
+
+        
+    
+    
+            var marker_c0e428b54987f33604c17db00d266093 = L.marker(
+                [40.732434, -73.994916],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_144d58c8c80a9107c3ce2433a2d5bf89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_c0e428b54987f33604c17db00d266093.setIcon(icon_144d58c8c80a9107c3ce2433a2d5bf89);
+        
+    
+        var popup_82cda67b6a11b291024db4f072323cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7dc0d9bdb0798943d9fc6736acdc4ff = $(`<div id="html_b7dc0d9bdb0798943d9fc6736acdc4ff" style="width: 100.0%; height: 100.0%;">Street: EAST 9TH STREET Number of Complaints: 382</div>`)[0];
+                popup_82cda67b6a11b291024db4f072323cc4.setContent(html_b7dc0d9bdb0798943d9fc6736acdc4ff);
+            
+        
+
+        marker_c0e428b54987f33604c17db00d266093.bindPopup(popup_82cda67b6a11b291024db4f072323cc4)
+        ;
+
+        
+    
+    
+            var marker_947d5dc04d0aadcc0e78c3e325b249d1 = L.marker(
+                [40.689173, -73.981639],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_8b560d7388f889998a16e3d1cb749f7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_947d5dc04d0aadcc0e78c3e325b249d1.setIcon(icon_8b560d7388f889998a16e3d1cb749f7b);
+        
+    
+        var popup_d2ce2d37f9f2a3d2894501e67a3bd75a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52928b4b626ee86c0542bd2628990fd0 = $(`<div id="html_52928b4b626ee86c0542bd2628990fd0" style="width: 100.0%; height: 100.0%;">Street: FULTON STREET Number of Complaints: 338</div>`)[0];
+                popup_d2ce2d37f9f2a3d2894501e67a3bd75a.setContent(html_52928b4b626ee86c0542bd2628990fd0);
+            
+        
+
+        marker_947d5dc04d0aadcc0e78c3e325b249d1.bindPopup(popup_d2ce2d37f9f2a3d2894501e67a3bd75a)
+        ;
+
+        
+    
+    
+            var marker_f3a19c4ef7d95810895915f0991a7de8 = L.marker(
+                [40.752939, -73.940414],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_0245cc6811604193ef827fb555185561 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_f3a19c4ef7d95810895915f0991a7de8.setIcon(icon_0245cc6811604193ef827fb555185561);
+        
+    
+        var popup_18a4298146801fdee43d29d719087472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b01b80f897ad57077c7e817833ad55c = $(`<div id="html_4b01b80f897ad57077c7e817833ad55c" style="width: 100.0%; height: 100.0%;">Street: 41 AVE Number of Complaints: 300</div>`)[0];
+                popup_18a4298146801fdee43d29d719087472.setContent(html_4b01b80f897ad57077c7e817833ad55c);
+            
+        
+
+        marker_f3a19c4ef7d95810895915f0991a7de8.bindPopup(popup_18a4298146801fdee43d29d719087472)
+        ;
+
+        
+    
+    
+            var marker_ea88afdf0bc00eccadedd410553ed6fa = L.marker(
+                [40.687605, -73.98054],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_bb2171555454a7de01877605cabd3af9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_ea88afdf0bc00eccadedd410553ed6fa.setIcon(icon_bb2171555454a7de01877605cabd3af9);
+        
+    
+        var popup_50779533baddc460ca5fed7d3c6e1f85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ac41dcf95469731e7ce80fddf7e4d4b = $(`<div id="html_5ac41dcf95469731e7ce80fddf7e4d4b" style="width: 100.0%; height: 100.0%;">Street: LIVINGSTON STREET Number of Complaints: 300</div>`)[0];
+                popup_50779533baddc460ca5fed7d3c6e1f85.setContent(html_5ac41dcf95469731e7ce80fddf7e4d4b);
+            
+        
+
+        marker_ea88afdf0bc00eccadedd410553ed6fa.bindPopup(popup_50779533baddc460ca5fed7d3c6e1f85)
+        ;
+
+        
+    
+    
+            var marker_b571cf898f64cb90956346770ce972e3 = L.marker(
+                [40.691838, -73.970607],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_e311a5566676d1251ce13302f068761c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b571cf898f64cb90956346770ce972e3.setIcon(icon_e311a5566676d1251ce13302f068761c);
+        
+    
+        var popup_0695dcc370b6f210d81e214cbb736555 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c79b4e9df98f89a9606ede994cba723c = $(`<div id="html_c79b4e9df98f89a9606ede994cba723c" style="width: 100.0%; height: 100.0%;">Street: CLERMONT AVENUE Number of Complaints: 339</div>`)[0];
+                popup_0695dcc370b6f210d81e214cbb736555.setContent(html_c79b4e9df98f89a9606ede994cba723c);
+            
+        
+
+        marker_b571cf898f64cb90956346770ce972e3.bindPopup(popup_0695dcc370b6f210d81e214cbb736555)
+        ;
+
+        
+    
+    
+            var marker_63eb68cbe052e8d84463929f09a5612c = L.marker(
+                [40.771378, -73.959402],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_da22417c963a3e90ad462dbc48f2c73e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_63eb68cbe052e8d84463929f09a5612c.setIcon(icon_da22417c963a3e90ad462dbc48f2c73e);
+        
+    
+        var popup_20d99b3ba794df27934b3556b74125e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_149840372ebfeade7bc4a8f6c9b54e5b = $(`<div id="html_149840372ebfeade7bc4a8f6c9b54e5b" style="width: 100.0%; height: 100.0%;">Street: THIRD AVENUE Number of Complaints: 330</div>`)[0];
+                popup_20d99b3ba794df27934b3556b74125e6.setContent(html_149840372ebfeade7bc4a8f6c9b54e5b);
+            
+        
+
+        marker_63eb68cbe052e8d84463929f09a5612c.bindPopup(popup_20d99b3ba794df27934b3556b74125e6)
+        ;
+
+        
+    
+    
+            var marker_e2b7835a8a3575130454439a9d1652ac = L.marker(
+                [40.772805, -73.957892],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_142a0a823bf9d4a7e45cf79d802ae877 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_e2b7835a8a3575130454439a9d1652ac.setIcon(icon_142a0a823bf9d4a7e45cf79d802ae877);
+        
+    
+        var popup_396e2ecc8b143a3f930321da8554560a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_532dd1e92b54b02bf50bf102958af654 = $(`<div id="html_532dd1e92b54b02bf50bf102958af654" style="width: 100.0%; height: 100.0%;">Street: EAST 77TH STREET Number of Complaints: 322</div>`)[0];
+                popup_396e2ecc8b143a3f930321da8554560a.setContent(html_532dd1e92b54b02bf50bf102958af654);
+            
+        
+
+        marker_e2b7835a8a3575130454439a9d1652ac.bindPopup(popup_396e2ecc8b143a3f930321da8554560a)
+        ;
+
+        
+    
+    
+            var marker_9154374325250317f6f852073dbeb47e = L.marker(
+                [40.714201, -73.995087],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_5036ecd84e11186fb5c65cb698776339 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_9154374325250317f6f852073dbeb47e.setIcon(icon_5036ecd84e11186fb5c65cb698776339);
+        
+    
+        var popup_e750f991777c751425ec55c7076aec47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55578214adf24ff14e057a884448f5b0 = $(`<div id="html_55578214adf24ff14e057a884448f5b0" style="width: 100.0%; height: 100.0%;">Street: DIVISION STREET Number of Complaints: 307</div>`)[0];
+                popup_e750f991777c751425ec55c7076aec47.setContent(html_55578214adf24ff14e057a884448f5b0);
+            
+        
+
+        marker_9154374325250317f6f852073dbeb47e.bindPopup(popup_e750f991777c751425ec55c7076aec47)
+        ;
+
+        
+    
+    
+            var marker_5c3b50d8e78a56bfc0469064a61d3911 = L.marker(
+                [40.800256, -73.937558],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_596d78ddf650b638c63d77027aea3211 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_5c3b50d8e78a56bfc0469064a61d3911.setIcon(icon_596d78ddf650b638c63d77027aea3211);
+        
+    
+        var popup_ba071e5e41c085a31e7481ce4b031653 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ceaa8cda2920ab88ea11e62161486401 = $(`<div id="html_ceaa8cda2920ab88ea11e62161486401" style="width: 100.0%; height: 100.0%;">Street: EAST 120TH STREET Number of Complaints: 320</div>`)[0];
+                popup_ba071e5e41c085a31e7481ce4b031653.setContent(html_ceaa8cda2920ab88ea11e62161486401);
+            
+        
+
+        marker_5c3b50d8e78a56bfc0469064a61d3911.bindPopup(popup_ba071e5e41c085a31e7481ce4b031653)
+        ;
+
+        
+    
+    
+            var marker_b6138307ece38f0a427c39b885fa0c0a = L.marker(
+                [40.69222, -73.986744],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_7d39d8627a931f00676c706c67610c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b6138307ece38f0a427c39b885fa0c0a.setIcon(icon_7d39d8627a931f00676c706c67610c79);
+        
+    
+        var popup_4b1e2b1e17815c631a269c171516d0ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a826cbf38788dc50945249c478b6f5a = $(`<div id="html_4a826cbf38788dc50945249c478b6f5a" style="width: 100.0%; height: 100.0%;">Street: WILLOUGHBY STREET Number of Complaints: 368</div>`)[0];
+                popup_4b1e2b1e17815c631a269c171516d0ad.setContent(html_4a826cbf38788dc50945249c478b6f5a);
+            
+        
+
+        marker_b6138307ece38f0a427c39b885fa0c0a.bindPopup(popup_4b1e2b1e17815c631a269c171516d0ad)
+        ;
+
+        
+    
+    
+            var marker_209e6196ebde7a9ff906e561fc6a8353 = L.marker(
+                [40.767305, -73.923246],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_ce4e10d72f8e0e78c02d800d50fbb29c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_209e6196ebde7a9ff906e561fc6a8353.setIcon(icon_ce4e10d72f8e0e78c02d800d50fbb29c);
+        
+    
+        var popup_2b1e2484f51afab3ac785c8f4e1d19ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bab402b091b9229f68362aedeb6ccdba = $(`<div id="html_bab402b091b9229f68362aedeb6ccdba" style="width: 100.0%; height: 100.0%;">Street: 29 STREET Number of Complaints: 305</div>`)[0];
+                popup_2b1e2484f51afab3ac785c8f4e1d19ff.setContent(html_bab402b091b9229f68362aedeb6ccdba);
+            
+        
+
+        marker_209e6196ebde7a9ff906e561fc6a8353.bindPopup(popup_2b1e2484f51afab3ac785c8f4e1d19ff)
+        ;
+
+        
+    
+    
+            var marker_6a33ff618a1c5675b88459688b1e2550 = L.marker(
+                [40.691828, -73.992243],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_3b3667c1c3b8635035b873115a1eb963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6a33ff618a1c5675b88459688b1e2550.setIcon(icon_3b3667c1c3b8635035b873115a1eb963);
+        
+    
+        var popup_62ea50ddcacd6dbed0db1217440e3c61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5474fa00f5e3c1ff1645649c32581b5a = $(`<div id="html_5474fa00f5e3c1ff1645649c32581b5a" style="width: 100.0%; height: 100.0%;">Street: LIVINGSTON STREET Number of Complaints: 336</div>`)[0];
+                popup_62ea50ddcacd6dbed0db1217440e3c61.setContent(html_5474fa00f5e3c1ff1645649c32581b5a);
+            
+        
+
+        marker_6a33ff618a1c5675b88459688b1e2550.bindPopup(popup_62ea50ddcacd6dbed0db1217440e3c61)
+        ;
+
+        
+    
+    
+            var marker_eeea4eb36fcc475b8b5b54d328085cef = L.marker(
+                [40.66548, -73.987362],
+                {}
+            ).addTo(feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40);
+        
+    
+            var icon_59944b7cf12b56719e2ea05e2d2185f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_eeea4eb36fcc475b8b5b54d328085cef.setIcon(icon_59944b7cf12b56719e2ea05e2d2185f8);
+        
+    
+        var popup_b3aaffab2b574d423acc4c579cad4ac5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a54eecd0b886e8452ad32d79492835b = $(`<div id="html_1a54eecd0b886e8452ad32d79492835b" style="width: 100.0%; height: 100.0%;">Street: 14TH STREET Number of Complaints: 360</div>`)[0];
+                popup_b3aaffab2b574d423acc4c579cad4ac5.setContent(html_1a54eecd0b886e8452ad32d79492835b);
+            
+        
+
+        marker_eeea4eb36fcc475b8b5b54d328085cef.bindPopup(popup_b3aaffab2b574d423acc4c579cad4ac5)
+        ;
+
+        
+    
+    
+            var layer_control_fd2fc2045ab9aebc52b6b7a1ae167ec8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fdcabb7f5ef7807b8cdcb0e66f9a2815,
+                    "Toner Background" : tile_layer_9845f9a3d5053683df27ef6b2f4cf598,
+                },
+                overlays :  {
+                    "450 or more complaints" : feature_group_06deda1222e56ea1c47f166fa6e81bad,
+                    "400-499 complaints" : feature_group_e61f4abbd114124b3dc3955fdadc5e43,
+                    "300-400 complaints" : feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40,
+                },
+            };
+            L.control.layers(
+                layer_control_fd2fc2045ab9aebc52b6b7a1ae167ec8.base_layers,
+                layer_control_fd2fc2045ab9aebc52b6b7a1ae167ec8.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_0cd0ed0d6724814e0b47528119cd7fa1);
+            tile_layer_9845f9a3d5053683df27ef6b2f4cf598.remove();
+            feature_group_111cbdb6d7e4d9cc6133aaf50b8fac40.remove();
+        
+</script>
+</html>
